@@ -1,0 +1,45 @@
+\begin{theindex}
+
+  \item {4.1/modAlphaCipher.h}, \hyperpage{15, 16}
+  \item {4.2/tableCipher.h}, \hyperpage{16, 17}
+
+  \indexspace
+
+  \item {CipherError}, \hyperpage{7}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+    \subitem {tableCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+    \subitem {tableCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {modAlphaCipher}, \hyperpage{7}
+    \subitem {decrypt}, \hyperpage{9}
+    \subitem {encrypt}, \hyperpage{9}
+    \subitem {modAlphaCipher}, \hyperpage{8}
+
+  \indexspace
+
+  \item {tableCipher}, \hyperpage{10}
+    \subitem {decrypt}, \hyperpage{11}
+    \subitem {encrypt}, \hyperpage{11}
+    \subitem {tableCipher}, \hyperpage{10}
+    \subitem {validateKey}, \hyperpage{12}
+    \subitem {validateText}, \hyperpage{12}
+
+  \indexspace
+
+  \item {validateKey}
+    \subitem {tableCipher}, \hyperpage{12}
+  \item {validateText}
+    \subitem {tableCipher}, \hyperpage{12}
+
+\end{theindex}

@@ -1,0 +1,106 @@
+\hypertarget{classmodAlphaCipher}{}\doxysection{Класс mod\+Alpha\+Cipher}
+\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+
+
+Класс для шифрования и дешифрования методом Гронсфельда  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}\label{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}} 
+{\bfseries mod\+Alpha\+Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаляем конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}{mod\+Alpha\+Cipher}} (const string \&skey)
+\begin{DoxyCompactList}\small\item\em Конструктор с ключом \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}{encrypt}} (const string \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Шифрование текста \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}{decrypt}} (const string \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Дешифрование текста \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования и дешифрования методом Гронсфельда 
+
+Ключ устанавливается в конструкторе. Методы encrypt и decrypt предназначены для шифрования и дешифрования текста соответственно. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}\label{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}} 
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{modAlphaCipher()}{modAlphaCipher()}}
+{\footnotesize\ttfamily mod\+Alpha\+Cipher\+::mod\+Alpha\+Cipher (\begin{DoxyParamCaption}\item[{const string \&}]{skey }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор с ключом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Ключ шифрования \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если ключ некорректен \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}\label{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}} 
+\index{modAlphaCipher@{modAlphaCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const string \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Дешифрование текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если текст некорректен \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}\label{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}} 
+\index{modAlphaCipher@{modAlphaCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const string \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Шифрование текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & Открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если текст некорректен \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+4.\+1/\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\item 
+4.\+1/mod\+Alpha\+Cipher.\+cpp\end{DoxyCompactItemize}

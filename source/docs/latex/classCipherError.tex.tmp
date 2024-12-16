@@ -1,0 +1,102 @@
+\hypertarget{classCipherError}{}\doxysection{Класс Cipher\+Error}
+\label{classCipherError}\index{CipherError@{CipherError}}
+
+
+Класс для обработки ошибок шифрования  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+
+
+Граф наследования\+:Cipher\+Error\+:
+% FIG 0
+
+
+Граф связей класса Cipher\+Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCipherError_a1bc96da1fd3c296b4e21f5d5a61ba56a}{Cipher\+Error}} (const string \&what\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Конструктор с сообщением об ошибке \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCipherError_a249ea70232f89700822c72387e271cc3}{Cipher\+Error}} (const char $\ast$what\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Конструктор с сообщением об ошибке \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCipherError_a1bc96da1fd3c296b4e21f5d5a61ba56a}{Cipher\+Error}} (const string \&what\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Конструктор с сообщением об ошибке \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCipherError_a249ea70232f89700822c72387e271cc3}{Cipher\+Error}} (const char $\ast$what\+\_\+arg)
+\begin{DoxyCompactList}\small\item\em Конструктор с сообщением об ошибке \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки ошибок шифрования 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classCipherError_a1bc96da1fd3c296b4e21f5d5a61ba56a}\label{classCipherError_a1bc96da1fd3c296b4e21f5d5a61ba56a}} 
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\doxysubsubsection{\texorpdfstring{CipherError()}{CipherError()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Cipher\+Error\+::\+Cipher\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор с сообщением об ошибке 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em what\+\_\+arg} & Сообщение об ошибке \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCipherError_a249ea70232f89700822c72387e271cc3}\label{classCipherError_a249ea70232f89700822c72387e271cc3}} 
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\doxysubsubsection{\texorpdfstring{CipherError()}{CipherError()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Cipher\+Error\+::\+Cipher\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор с сообщением об ошибке 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em what\+\_\+arg} & Сообщение об ошибке \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCipherError_a1bc96da1fd3c296b4e21f5d5a61ba56a}\label{classCipherError_a1bc96da1fd3c296b4e21f5d5a61ba56a}} 
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\doxysubsubsection{\texorpdfstring{CipherError()}{CipherError()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Cipher\+Error\+::\+Cipher\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор с сообщением об ошибке 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em what\+\_\+arg} & Сообщение об ошибке \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCipherError_a249ea70232f89700822c72387e271cc3}\label{classCipherError_a249ea70232f89700822c72387e271cc3}} 
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\index{CipherError@{CipherError}!CipherError@{CipherError}}
+\doxysubsubsection{\texorpdfstring{CipherError()}{CipherError()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Cipher\+Error\+::\+Cipher\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{what\+\_\+arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор с сообщением об ошибке 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em what\+\_\+arg} & Сообщение об ошибке \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+4.\+1/\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\item 
+4.\+2/\mbox{\hyperlink{tableCipher_8h}{table\+Cipher.\+h}}\end{DoxyCompactItemize}

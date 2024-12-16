@@ -1,0 +1,176 @@
+\hypertarget{classtableCipher}{}\doxysection{Класс table\+Cipher}
+\label{classtableCipher}\index{tableCipher@{tableCipher}}
+
+
+Класс для шифрования и дешифрования методом табличного шифра  
+
+
+
+
+{\ttfamily \#include $<$table\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtableCipher_a16dd23077ac4b8967d7956661921fc80}\label{classtableCipher_a16dd23077ac4b8967d7956661921fc80}} 
+{\bfseries table\+Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор по умолчанию \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtableCipher_adce6b8788bececcbf78a0672b03447ff}{table\+Cipher}} (int key)
+\begin{DoxyCompactList}\small\item\em Конструктор с ключом \end{DoxyCompactList}\item 
+wstring \mbox{\hyperlink{classtableCipher_ab00c8a45f7e3bbee4f685d73201c03c6}{encrypt}} (wstring \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Зашифровывание текста \end{DoxyCompactList}\item 
+wstring \mbox{\hyperlink{classtableCipher_aadf5f4092e58b3dae3d7cdc9b3b5e409}{decrypt}} (wstring \&secret\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Дешифровывание текста \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtableCipher_a402a257d851f40dc2cbea7554fa7ed43}{validate\+Text}} (wstring \&text)
+\begin{DoxyCompactList}\small\item\em Валидация текста \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtableCipher_a60b90017dad1bdeb04384da547995cba}{validate\+Text}} (wstring \&open\+\_\+text, wstring \&secret\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Валидация открытого и зашифрованного текста \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtableCipher_a7999035ad7ea19aa28cebbc627aa34d6}{validate\+Key}} (int \&key, wstring \&text)
+\begin{DoxyCompactList}\small\item\em Валидация ключа \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования и дешифрования методом табличного шифра 
+
+Ключ устанавливается в конструкторе. Методы encrypt и decrypt предназначены для шифрования и дешифрования текста соответственно. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classtableCipher_adce6b8788bececcbf78a0672b03447ff}\label{classtableCipher_adce6b8788bececcbf78a0672b03447ff}} 
+\index{tableCipher@{tableCipher}!tableCipher@{tableCipher}}
+\index{tableCipher@{tableCipher}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{tableCipher()}{tableCipher()}}
+{\footnotesize\ttfamily table\+Cipher\+::table\+Cipher (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Конструктор с ключом 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ шифрования \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если ключ меньше 2 \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classtableCipher_aadf5f4092e58b3dae3d7cdc9b3b5e409}\label{classtableCipher_aadf5f4092e58b3dae3d7cdc9b3b5e409}} 
+\index{tableCipher@{tableCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily wstring table\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{wstring \&}]{secret\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Дешифровывание текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em secret\+\_\+text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если текст некорректен \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtableCipher_ab00c8a45f7e3bbee4f685d73201c03c6}\label{classtableCipher_ab00c8a45f7e3bbee4f685d73201c03c6}} 
+\index{tableCipher@{tableCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily wstring table\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{wstring \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Зашифровывание текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & Открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если текст некорректен \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtableCipher_a7999035ad7ea19aa28cebbc627aa34d6}\label{classtableCipher_a7999035ad7ea19aa28cebbc627aa34d6}} 
+\index{tableCipher@{tableCipher}!validateKey@{validateKey}}
+\index{validateKey@{validateKey}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{validateKey()}{validateKey()}}
+{\footnotesize\ttfamily void table\+Cipher\+::validate\+Key (\begin{DoxyParamCaption}\item[{int \&}]{key,  }\item[{wstring \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Валидация ключа 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ \\
+\hline
+{\em text} & Текст \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если ключ некорректного размера \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtableCipher_a60b90017dad1bdeb04384da547995cba}\label{classtableCipher_a60b90017dad1bdeb04384da547995cba}} 
+\index{tableCipher@{tableCipher}!validateText@{validateText}}
+\index{validateText@{validateText}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{validateText()}{validateText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void table\+Cipher\+::validate\+Text (\begin{DoxyParamCaption}\item[{wstring \&}]{open\+\_\+text,  }\item[{wstring \&}]{secret\+\_\+text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Валидация открытого и зашифрованного текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & Открытый текст \\
+\hline
+{\em secret\+\_\+text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если тексты некорректны \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classtableCipher_a402a257d851f40dc2cbea7554fa7ed43}\label{classtableCipher_a402a257d851f40dc2cbea7554fa7ed43}} 
+\index{tableCipher@{tableCipher}!validateText@{validateText}}
+\index{validateText@{validateText}!tableCipher@{tableCipher}}
+\doxysubsubsection{\texorpdfstring{validateText()}{validateText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void table\+Cipher\+::validate\+Text (\begin{DoxyParamCaption}\item[{wstring \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Валидация текста 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Текст для валидации \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classCipherError}{Cipher\+Error}}} & если текст некорректен \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+4.\+2/\mbox{\hyperlink{tableCipher_8h}{table\+Cipher.\+h}}\item 
+4.\+2/table\+Cipher.\+cpp\end{DoxyCompactItemize}
